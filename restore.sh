@@ -1,6 +1,6 @@
 #! /bin/bash
 
-BACKUP_NAME=parking_2022-06-16T22_22_45Z # This variable must exist in the container.
+BACKUP_NAME=backup_2022-06-16T22_22_45Z # This variable must exist in the container.
 CONTAINER_NAME=postgres13
 
 docker cp $BACKUP_NAME.sql.gz ${CONTAINER_NAME}:/${BACKUP_NAME}.sql.gz
